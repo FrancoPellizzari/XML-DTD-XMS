@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca.xml[
+
+<!ELEMENT biblioteca (libros, revistas, periodicos)>
+
+<!ELEMENT libros(libro+)>
+<!ATTLIST libros id ID #REQUIRED>
+
+<!ELEMENT libro(tipo_clase, titulo, capitulos, contenido, paglib?)>
+<!ATTLIST tipo_clase(novela | infantil | didactico)>
+<!ELEMENT titulo(#PCDATA)>
+<!ELEMENT capitulos(#PCDATA)>
+<!ELEMENT contenido(#PCDATA)>
+<!ELEMENT paglib(#PCDATA)>
+
+<!ELEMENT capitulos(nombre, sinopsis, contenido_cap, pagcap)>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT sinopsis(#PCDATA)>
+<!ELEMENT contenido_cap(#PCDATA)>
+<!ELEMENT pagcap(#PCDATA)>
+
+
+<!--Revistas-->
+
+<!ELEMENT revistas(revista+)>
+<!ATTLIST revistas id ID #REQUIRED>
+
+<!ELEMENT revista(tipo_clase, titulo, nrevista, seccion)>
+<!ATTLIST tipo_clase(informática | corazón | coches | investigación | otras)>
+<!ELEMENT titulo(#PCDATA)>
+<!ELEMENT nrevista(#PCDATA)>
+<!ELEMENT seccion(pagsec, contenido_rev)>
+
+<!ELEMENT pagsec(#PCDATA)>
+<!ELEMENT contenido_rev(#PCDATA)>
+
+<!--Periodicos-->
+
+<!ELEMENT periodicos(peridico+)
+<!ATTLIST periodicos id ID #REQUIRED>
+
+<!ELEMENT periodico(tipo_clase, secciones, indice, contenido_per)
+<!ELEMENT tipo_clase(nacionales | internacionales)>
+<!ELEMENT fecha_publicacion(#PCDATA)>
+<!ELEMENT secciones(#PCDATA)>
+<!ELEMENT indice(#PCDATA)>
+<!ELEMENT contenido_per(#PCDATA)>
+
+<!ELEMENT secciones(tipo_seccion, articulos)>
+<!ELEMENT tipo_seccion(economia | opinion | deportes | nacional | internacional)>
+
+<!ATTLIST articulos autor CDATA #REQUIRED>
+<!ATTLIST contenido_per enlace CDATA #REQUIRED>
+
+
+
+
+
+
+
+]

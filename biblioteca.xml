@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "biblioteca.xsd" >
+
+<biblioteca>
+
+    <libros id="l000">
+        <libro>
+            <tipo_clase> </tipo_clase>
+            <titulo> </titulo>
+            <capitulos>
+                <nombre> </nombre>
+                <indice> </indice>
+                <sinopsis> </sinopsis>
+                <contenido_cap> </contenido_cap>
+                <pagcap> </pagcap>
+
+            </capitulos>
+            <contenido> </contenido>
+            <paglib> </paglib>
+
+        
+        </libro>
+    </libros>
+
+    <revistas id= "r0000">
+    <revista>
+        <tipo_clase> </tipo_clase>
+        <titulo> </titulo>
+        <nrevista> </nrevista>
+        <seccion>
+            <pagsec> </pagsec>
+            <contenido_rev enlace= ""> </contenido_rev>
+
+        </seccion>
+
+    </revista>
+    </revistas>
+
+    <periodicos id= "p0000">
+    <peridico>
+        <tipo_clase> </tipo_clase>  
+        <fecha_publicacion> </fecha_publicacion>
+        <secciones>
+            <tipo_seccion> </tipo_seccion>
+            <articulos autor="">
+                 
+
+            </articulos>
+
+        </secciones>
+
+        <indice> </indice>
+        <contenido_per enlace= ""> </contenido_per>
+
+    </peridico>
+    </periodicos>
+
+</biblioteca>
+
+
